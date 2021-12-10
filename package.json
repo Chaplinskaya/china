@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Chaplinskaya/pulse.git"
+    "url": "git+https://github.com/Chaplinskaya/china.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Chaplinskaya/pulse/issues"
+    "url": "https://github.com/Chaplinskaya/china/issues"
   },
-  "homepage": "https://github.com/Chaplinskaya/pulse#readme",
+  "homepage": "https://github.com/Chaplinskaya/china#readme",
   "dependencies": {
     "animate.css": "^4.1.1"
   },
