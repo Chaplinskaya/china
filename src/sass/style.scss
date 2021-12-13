@@ -1,4 +1,26 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+
 @import 'base/variables';
+
 * {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.title {
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Bold';
+}
+@import 'blocks/promo';
+@import 'blocks/menu';
+@import 'blocks/main';
+@import 'blocks/advantages';
+
+@import 'blocks/media';

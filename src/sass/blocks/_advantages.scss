@@ -1,0 +1,27 @@
+.advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #f3f3f3;
+    &__block {
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 520px);
+        column-gap: 80px;
+        &-item {
+            display: grid;
+            grid-template-columns: 60px 440px;
+            img {
+                width: 100%;
+            }
+            &-wrapper {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 30px 110px;
+                padding-left: 30px;
+                &-title {
+                    color: $main_color;
+                }
+            }
+        }
+    }
+}
