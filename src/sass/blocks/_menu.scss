@@ -2,14 +2,14 @@
     position: relative;
 }
 header {
-    height: 120px;
+    width: 100%;
 }
 .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    height: 120px;
     &__logo {
         img {
             max-width: 100%;
