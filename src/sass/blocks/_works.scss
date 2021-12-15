@@ -1,0 +1,26 @@
+.works {
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-top: 40px;
+        padding-bottom: 60px;
+        column-gap: 30px;
+        &-item {
+            display: flex;
+            flex-direction: column;
+            img {
+                max-width: 100%;
+            }
+        }
+        &-item-title {
+            padding-top: 30px;
+            color: $main_color;
+            text-align: center;
+            font-family: "Roboto Bold";
+        }
+        &-item-text {
+            padding-top: 20px;
+            text-align: center;
+        }
+    }
+}

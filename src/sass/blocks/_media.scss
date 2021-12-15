@@ -43,12 +43,23 @@
             }
         }
     }
+    .works {
+        &__block {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 20px;
+            grid-auto-rows: 1fr;
+        }
+    }
 }
 
 
 @media (max-width: 991px) {
     .container {
         width: 740px;
+    }
+    .subtitle {
+        width: 100%;
     }
     .header {
         position: fixed;
@@ -155,6 +166,14 @@
             font-size: 12px;
         }
     }
+    .works {
+        &__block {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            row-gap: 20px;
+            grid-auto-rows: 1fr;
+        }
+    }
 }
 @media (max-width: 575px) {
     .container {
@@ -192,6 +211,17 @@
     .advantages {
         &__block-item {
             grid-template-columns: 50px 250px;
+        }
+    }
+    .title {
+        font-size: 20px;
+    }
+    .subtitle {
+        font-size: 16px;
+    }
+    .works {
+        &__block-item-text {
+            font-size: 14px;
         }
     }
 }

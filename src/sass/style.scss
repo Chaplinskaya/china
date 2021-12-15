@@ -17,10 +17,27 @@
     text-align: center;
     text-transform: uppercase;
     font-family: 'Roboto Bold';
+    padding-top: 60px;
+    &:after {
+        content: '';
+        display: block;
+        width: 150px;
+        height: 1px;
+        background: $main_color;
+        margin: 20px auto;
+    }
+}
+.subtitle {
+    font-size: 21px;
+    text-align: center;
+    font-family: 'Roboto Light';
+    width: 860px;
+    margin: 0 auto;
 }
 @import 'blocks/promo';
 @import 'blocks/menu';
 @import 'blocks/main';
 @import 'blocks/advantages';
+@import 'blocks/works';
 
 @import 'blocks/media';
