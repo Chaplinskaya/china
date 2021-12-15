@@ -56,6 +56,9 @@
     }
     .menu {
         height: 60px;
+        &__logo img {
+            width: 50px;
+        };
         &__list {
             flex-direction: column;
             justify-content: center;
