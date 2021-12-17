@@ -222,6 +222,11 @@
     .works {
         &__block-item-text {
             font-size: 14px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+        &__block-item-title {
+            padding-top: 10px;
         }
     }
 }
