@@ -152,7 +152,14 @@
             }
         }
     }
+    .price__block {
+        grid-template-columns: repeat(2, 268px);
+        column-gap: 20px;
+        &-item {
+            margin-bottom: 20px;
+        }
     
+    }
 }
 @media (max-width: 767px) {
     .container {
@@ -228,5 +235,8 @@
         &__block-item-title {
             padding-top: 10px;
         }
+    }
+    .price__block {
+        grid-template-columns: repeat(1, 268px);
     }
 }
