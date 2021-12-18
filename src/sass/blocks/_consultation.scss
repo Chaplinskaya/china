@@ -1,0 +1,72 @@
+.consultation {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    &__title {
+        text-align: center;
+        font-size: 28px;
+    }
+    &__block {
+        width: 1140px;
+        max-width: 100%;
+        border: 1px solid #c4c4c4;
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        margin-top: 70px;
+        &-img {
+            display: grid;
+            grid-template: 102px / 490px 102px 490px;
+            justify-content: space-between;
+            align-items: start;
+        }
+        .line-1 {
+            width: 500px;
+            max-width: 100%;
+            height: 1px;
+            background: #c4c4c4;
+        }
+        &-img-bottom {
+            display: grid;
+            grid-template: 45px / 450px 180px 450px;
+            justify-content: space-between;
+            align-items: end;
+        }
+        .line-2 {
+            width: 450px;
+            max-width: 100%;
+            height: 1px;
+            background: #c4c4c4;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-top: -50px;
+        }
+        form {
+            .input-wrapper {
+                display: grid;
+                grid-template: 40px/ repeat(3, 270px);
+                justify-content: center;
+                    input {
+                        border-radius: 20px;
+                        border: 1px solid #c4c4c4;
+                        margin: 0 5px;
+                        padding-left: 10px;
+                    }
+                }
+            button {
+                grid-column: 2/3;
+                width: 180px;
+                height: 48px;
+                border-radius: 24px;
+                color: #fff;
+                font-size: 12px;
+                text-transform: uppercase;
+                background: $main_color;
+                display: block;
+                margin: -25px auto;
+                border: none;
+            }
+        }
+    }
+}
