@@ -1,0 +1,21 @@
+.manager {
+    background: url("../images/meneger.png") 100% / cover no-repeat;
+    text-align: center;
+    color: #fff;
+    img {
+        display: block;
+        margin: 0 auto;
+        padding: 55px 0 20px;
+    }
+    &__title {
+        font-size: 26px;
+        font-family: "Roboto Bold";
+    }
+    &__subtitle {
+        max-width: 990px;
+        margin: 0 auto;
+        padding: 20px 0 80px;
+        font-size: 19px;
+        font-family: "Roboto Light";
+    }
+}
