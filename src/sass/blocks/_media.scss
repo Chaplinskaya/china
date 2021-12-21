@@ -330,4 +330,14 @@
             }
         }
     }
+    .reviews {
+        &__slider {
+            &-container {
+                margin-top: 50px;
+                &-text {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }

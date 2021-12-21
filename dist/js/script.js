@@ -1,3 +1,4 @@
+
 window.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger'),
           menulist = document.querySelector('.menu__list'),
@@ -13,4 +14,6 @@ window.addEventListener('DOMContentLoaded', () => {
             menulist.classList.toggle('menu__list_active');
         });
     });
+
+   
 });
