@@ -1,6 +1,6 @@
 .reviews {
     padding-bottom: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     &__slider {
         margin-top: 50px;
         padding: 0px 50px;
@@ -24,17 +24,11 @@
             img {
                 max-width: 100%;
             }
-            .swiper-button-prev::after {
-                color: red;
-                font-size: 50px;
-            }
-            .swiper-button-next::after {
-                color: red;
-                font-size: 50px;
-            }
             .swiper-slider {
                 width: 600px;
+                background: red;
             }
+            
         }
     }
 }

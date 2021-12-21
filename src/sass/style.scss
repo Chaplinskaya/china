@@ -34,6 +34,14 @@
     width: 860px;
     margin: 0 auto;
 }
+.swiper-button-prev::after {
+    color: $main_color;
+    font-size: 50px;
+}
+.swiper-button-next::after {
+    color: $main_color;
+    font-size: 50px;
+}
 @import 'blocks/promo';
 @import 'blocks/menu';
 @import 'blocks/main';
