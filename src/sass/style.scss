@@ -36,11 +36,11 @@
 }
 .swiper-button-prev::after {
     color: $main_color;
-    font-size: 50px;
+    font-size: 40px;
 }
 .swiper-button-next::after {
     color: $main_color;
-    font-size: 50px;
+    font-size: 40px;
 }
 @import 'blocks/promo';
 @import 'blocks/menu';
@@ -53,5 +53,6 @@
 @import 'blocks/manager';
 @import 'blocks/scheme';
 @import 'blocks/reviews';
+@import 'blocks/questions';
 
 @import 'blocks/media';

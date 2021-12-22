@@ -95,6 +95,7 @@
     .header {
         position: fixed;
         background: #404047;
+        z-index: 100;
     }
     .menu {
         height: 60px;
@@ -204,6 +205,29 @@
                 display: grid;
                 grid-template: 40px 40px 40px/ repeat(1, 370px);
                 row-gap: 20px;
+            }
+        }
+    }
+    .questions {
+        &__container {
+            margin-top: 100px;
+            &-form {
+                grid-template: 45px 45px 45px 70px/ 1fr;
+                input, textarea {
+                    margin-left: 10px;
+                }
+                input[type='text'] {
+                    grid-column: 1/2;
+                }
+                input[type='number'] {
+                    grid-column: 1/2;
+                }
+                input[type='email'] {
+                    grid-column: 1/2;
+                }
+                textarea {
+                    grid-column: 1/2;
+                }
             }
         }
     }
