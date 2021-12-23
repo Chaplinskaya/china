@@ -15,5 +15,12 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+   //Modal
    
+   $('[data-modal=consultation]').on('click', function() {
+       $('.overlay, #consultant').fadeIn('slow');
+   });
+   $('.modal__close').on('click', function() {
+       $('.overlay, #consultant, #thanks').fadeOut();
+   })
 });

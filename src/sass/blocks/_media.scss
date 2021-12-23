@@ -373,4 +373,18 @@
     .swiper-pagination-bullets.swiper-pagination-horizontal  {
         bottom: -120px;
     }
+    .modal {
+        width: 290px;
+        padding: 10px;
+        &__close {
+            right: -30px;
+        }
+        .questions__container-form {
+            column-gap: 0px;
+        }
+        .questions__container-form input,
+        .questions__container-form textarea {
+            margin-left: 0;
+        }
+    }
 }
