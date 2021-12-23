@@ -21,6 +21,6 @@ window.addEventListener('DOMContentLoaded', () => {
        $('.overlay, #consultant').fadeIn('slow');
    });
    $('.modal__close').on('click', function() {
-       $('.overlay, #consultant, #thanks').fadeOut();
-   })
+       $('.overlay, #consultant, #thanks').fadeOut('slow');
+   });
 });
