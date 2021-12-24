@@ -5,6 +5,7 @@
     height: 100%;
     top: 0;
     background-color: rgba( 0, 0, 0, 0.56);
+    z-index: 100;
 }
 .modal {
     position: absolute;
@@ -15,6 +16,7 @@
     width: 500px;
     min-height: 280px;
     padding: 20px;
+    z-index: 100;
     &__close {
         position: absolute;
         top: 0;
