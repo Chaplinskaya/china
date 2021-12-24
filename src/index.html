@@ -320,9 +320,12 @@
                     <p>Напишите нам!</p>
                 </div>
                 <form action="#" class="questions__container-form">
-                    <input name="name" required type="text" placeholder="Ваше имя...">
-                    <input name="phone" required type="number" placeholder="Ваш номер телефона...">
-                    <input name="email" required type="email" placeholder="Ваш e-mail...">
+                    <div class="input-block">
+                        <input name="name" required type="text" placeholder="Ваше имя...">
+                        <input name="phone" required type="number" placeholder="Ваш номер телефона...">
+                        <input name="email" required type="email" placeholder="Ваш e-mail...">
+                    </div>
+                    
                     <textarea name="text-form" placeholder="Cообщение..." id="text-form-quest"></textarea>
                     <button>Отправить заявку</button>
                 </form>
@@ -339,9 +342,12 @@
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течение 15 минут</div>
             <form action="#" class="questions__container-form">
-                <input name="name" required type="text" placeholder="Ваше имя...">
-                <input name="phone" required type="number" placeholder="Ваш номер телефона...">
-                <input name="email" required type="email" placeholder="Ваш e-mail...">
+                
+                    <input name="name" type="text" placeholder="Ваше имя...">
+                    <input name="phone" type="number" placeholder="Ваш номер телефона...">
+                    <input name="email" type="email" placeholder="Ваш e-mail...">
+               
+               
                 <textarea name="text-form" placeholder="Cообщение..." id="text-form-quest"></textarea>
                 <button>Отправить заявку</button>
             </form>
@@ -357,6 +363,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

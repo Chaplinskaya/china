@@ -40,23 +40,13 @@
         background: #f2f2f2;
     }
     .questions__container-form {
-        grid-template: 50px 50px 50px 100px/1fr;
-        row-gap: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
         input, textarea {
-            margin-left: 20px;
+            margin-top: 15px;
+            width: 100%;
         }
-        input[type='text'] {
-            grid-column: 1/2;
-        }
-        input[type='number'] {
-            grid-column: 1/2;
-        }
-        input[type='email'] {
-            grid-column: 1/2;
-        }
-        textarea {
-            grid-column: 1/2;
-        }
+        
     }
 }
 #consultant, #thanks {
