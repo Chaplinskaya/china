@@ -1,4 +1,4 @@
-.overlay {
+.modal {
     position: fixed;
     display: none;
     width: 100%;
@@ -6,21 +6,25 @@
     top: 0;
     background-color: rgba( 0, 0, 0, 0.56);
     z-index: 100;
-}
-.modal {
-    position: absolute;
-    background: #c4c4c4;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
-    min-height: 280px;
-    padding: 20px;
-    z-index: 100;
+    overflow:hidden;
+    &__dialog {
+        max-width:500px;
+        margin:40px auto;
+    }
+    &__content {
+        position:relative;
+        width:100%;
+        padding:40px;
+        background-color: #c1c2c1;;
+        border:1px solid rgba(0,0,0,.2);
+        border-radius:4px;
+        max-height:80vh;
+        overflow-y:auto;
+    }
     &__close {
         position: absolute;
-        top: 0;
-        right: -40px;
+        top: 10px;
+        right: 10px;
         font-size: 40px;
         color: $main_color;
         line-height: 20px;
@@ -40,6 +44,7 @@
     &__mini {
         min-height: 150px;
         background: #f2f2f2;
+        display: none;
     }
     .questions__container-form {
         padding-left: 5px;
@@ -48,10 +53,14 @@
             margin-top: 15px;
             width: 100%;
         }
-        
+    }
+    #consultant, #thanks {
+        -display: none;
     }
 }
-#consultant, #thanks {
+.hide {
     display: none;
 }
-    
+.show {
+    display: block;
+}

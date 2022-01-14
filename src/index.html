@@ -33,7 +33,7 @@
                         <p>Есть вопросы?</p>
                         <a href="tel:30948122432" class="menu__header_phone">+3 (094) 812 24 32</a>
                     </div>
-                    <button data-modal="consultation" class="menu__btn">Перезвоните мне</button>
+                    <button data-modal class="menu__btn">Перезвоните мне</button>
                     <div class="hamburger">
                         <span></span>
                         <span></span>
@@ -210,12 +210,11 @@
                 
                 <div class="consultation__block-img"><div class="line-1"></div><img src="icons/cons.png" alt="заказать консультацию"><div class="line-1"></div></div>
                 
-                <form id="consultation-form">
+                <form class="form-modal" id="consultation-form">
                     <div class="input-wrapper"><input name="name" placeholder="Ваше имя..." type="text" class="consultation__block-name">
-                    <input name="tel" placeholder="Ваш номер телефона..." type="text" class="consultation__block-tel">
-                    <input name="email" placeholder="Ваш e-mail..." type="text" class="consultation__block-email"></div>
-                    
-                    <div class="consultation__block-img-bottom"><div class="line-2"></div><button class="consultation__block-btn">Отправить заявку</button><div class="line-2"></div></div>
+                    <input required name="tel" placeholder="Ваш номер телефона..." type="text" class="consultation__block-tel">
+                    <input required name="email" placeholder="Ваш e-mail..." type="text" class="consultation__block-email"></div>
+                    <div class="consultation__block-img-bottom"><div class="line-2"></div><button data-modal class="consultation__block-btn">Отправить заявку</button><div class="line-2"></div></div>
                 </form>
             </div>
         </div>
@@ -321,9 +320,9 @@
                 </div>
                 <form action="#" class="questions__container-form">
                     <div class="input-block">
-                        <input name="name" required type="text" placeholder="Ваше имя...">
-                        <input name="phone" required type="number" placeholder="Ваш номер телефона...">
-                        <input name="email" required type="email" placeholder="Ваш e-mail...">
+                        <input required name="name" required type="text" placeholder="Ваше имя...">
+                        <input required name="phone" required type="number" placeholder="Ваш номер телефона...">
+                        <input required name="email" required type="email" placeholder="Ваш e-mail...">
                     </div>
                     
                     <textarea name="text-form" placeholder="Cообщение..." id="text-form-quest"></textarea>
@@ -336,29 +335,38 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.53486348891!2d30.48532985093755!3d50.43113729653717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cee9933801df%3A0x1e258d7e4158974e!2z0YPQuy4g0JrRg9C00YDRj9GI0L7QstCwLCAxNtCQLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1640199957727!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </footer>
 
-    <div class="overlay">
+    
         <div class="modal" id="consultant">
-            <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">Просто заполните форму заявки</div>
-            <div class="modal__descr">и мы перезвоним вам в течение 15 минут</div>
-            <form action="#" class="questions__container-form">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    
+                    <form action="#" class="questions__container-form">
+                        <div data-close class="modal__close">&times;</div>
+                        <div class="modal__subtitle">Просто заполните форму заявки</div>
+                        <div class="modal__descr">и мы перезвоним вам в течение 15 минут</div>
+                        
+                        <input required name="name" type="text" placeholder="Ваше имя...">
+                        <input required name="phone" type="number" placeholder="Ваш номер телефона...">
+                        <input required name="email" type="email" placeholder="Ваш e-mail...">
+                        <textarea name="text-form" placeholder="Cообщение..." id="text-form-quest"></textarea>
+                        <button data-modal>Отправить заявку</button>
+                    </form>
                 
-                    <input name="name" type="text" placeholder="Ваше имя...">
-                    <input name="phone" type="number" placeholder="Ваш номер телефона...">
-                    <input name="email" type="email" placeholder="Ваш e-mail...">
-               
-               
-                <textarea name="text-form" placeholder="Cообщение..." id="text-form-quest"></textarea>
-                <button>Отправить заявку</button>
-            </form>
+                </div>
+            </div>
         </div>
-        <div class="modal modal__mini" id="thanks">
+   
+        
+
+
+
+        <!--<div class="modal modal__mini" id="thanks">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Cпасибо за вашу заявку!</div>
             <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
-        </div>
+        </div>-->
         
-    </div>
+    
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
